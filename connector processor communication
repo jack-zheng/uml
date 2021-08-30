@@ -1,1 +1,151 @@
-<mxfile host="app.diagrams.net" modified="2021-08-30T11:42:49.817Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" version="14.9.5" etag="qCDEaIFjI3ztANOYToeE" type="github"><diagram id="c0KibnmqlIO2h7oLjk_d">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-30T12:08:04.104Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="6MpshVVUux8DWDxIJ6vk" version="14.9.5" type="github">
+  <diagram id="c0KibnmqlIO2h7oLjk_d" name="Page-1">
+    <mxGraphModel dx="888" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-1" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="780" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-2" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="280" as="sourcePoint" />
+            <mxPoint x="470" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-3" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="320" as="sourcePoint" />
+            <mxPoint x="780" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-4" value="HttpConnector" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="290" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-5" value="HttpProcessor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="290" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-6" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="280" as="sourcePoint" />
+            <mxPoint x="210" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-7" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="440" as="sourcePoint" />
+            <mxPoint x="780" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-8" value="Start&lt;br&gt;阶段" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="375" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-9" value="1. Fire life cycle event - START_EVENT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="330" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-10" value="2. 以 daemon 方式启动 connector 线程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="355" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-11" value="3. 创建 processor - 并启动对应的线程,&lt;br&gt;默认 available 为 false" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="390" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-12" value="Run&lt;br&gt;阶段" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="460" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-13" value="Block，等待 socket 到来" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="460" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-14" value="执行 await()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="460" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-15" value="!available = true, 执行 wait(), block" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="490" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-16" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="520" as="sourcePoint" />
+            <mxPoint x="660" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-17" value="收到&lt;br&gt;request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="550" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-18" value="拿到一个可用的 processor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="540" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-19" value="调用 processor 的 assign(socket) 方法" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="570" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-20" value="available = false, 跳过 while" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="600" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-21" value="将传入的 socket 赋给成员变量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="630" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-22" value="available = true + notifyAll()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="660" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-23" value="" style="endArrow=classic;dashed=1;html=1;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="670" as="sourcePoint" />
+            <mxPoint x="490" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-24" value="从 wait 状态被唤醒" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="540" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-25" value="!available = false, 跳过 while" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="570" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-26" value="socket 赋值给本地变量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="600" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-27" value="notifyAll() + return socket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="630" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-28" value="process(socket) 处理 request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="660" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-29" value="处理完毕, 将 processor 放回 stack 重用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="690" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-30" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="699.5" as="sourcePoint" />
+            <mxPoint x="760" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-31" value="" style="endArrow=none;dashed=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="470" as="sourcePoint" />
+            <mxPoint x="760" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-32" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="140" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-33" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="750" as="sourcePoint" />
+            <mxPoint x="780" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MZVk0QSvDr4ji-doEuxt-34" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="280" as="sourcePoint" />
+            <mxPoint x="780" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
